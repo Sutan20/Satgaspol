@@ -1,4 +1,14 @@
 <resources>
 	<string name="app_name">Satgaspol</string>
     <string name="nama_pemilik_barang">Nama Pemilik Barang</string>
+    <string name="placeholder_name">Nama User</string>
+    <string name="welcome">Welcome,</string>
+    <string name="ramadhan_service_hours">Ramadhan Service Hours</string>
+    <string name="operational_time">09:00 &#8211; 16:30 WIB</string>
+    <string name="sisa_barang">Sisa Barang</string>
+    <string name="placeholder_item_count">200</string>
+    <string name="paket">Paket</string>
+    <string name="diambil">Diambil</string>
+    <string name="tersedia">Tersedia</string>
+    <string name="total">Total</string>
 </resources>
