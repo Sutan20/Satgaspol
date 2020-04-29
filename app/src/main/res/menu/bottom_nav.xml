@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:checked="true"
+        android:icon="@drawable/ic_house"
+        android:title="@string/beranda" />
+
+    <item
+        android:id="@+id/action_paket"
+        android:icon="@drawable/ic_box"
+        android:title="@string/paket_saya" />
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more"
+        android:title="@string/lainnya" />
+</menu>

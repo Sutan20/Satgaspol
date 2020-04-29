@@ -1,5 +1,5 @@
 <resources>
-	<string name="app_name">Satgaspol</string>
+    <string name="app_name">Satgaspol</string>
     <string name="nama_pemilik_barang">Nama Pemilik Barang</string>
     <string name="placeholder_name">Nama User</string>
     <string name="welcome">Welcome,</string>
@@ -11,4 +11,15 @@
     <string name="diambil">Diambil</string>
     <string name="tersedia">Tersedia</string>
     <string name="total">Total</string>
+    <string name="cari_paket">Cari Paket</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="data_paket_rt">Data Paket RT</string>
+    <string name="placeholder_rt">RT 07</string>
+    <string name="placeholder_tanggal">30 April 2020</string>
+    <string name="paket_saya">Paket Saya</string>
+    <string name="lainnya">Lainnya</string>
+    <string name="beranda">Beranda</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

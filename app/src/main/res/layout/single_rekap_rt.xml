@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded_white">
+
+    <TextView
+        android:id="@+id/text_rt"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="@string/placeholder_rt"
+        android:textColor="@color/black"
+        android:textSize="52sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/ruler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tanggal_rt"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:text="@string/placeholder_tanggal"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ruler"
+        android:textSize="15sp"
+        android:autoSizeMaxTextSize="15sp"
+        android:autoSizeMinTextSize="13sp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/text_rt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total_rt"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:text="200 Pkg"
+        android:textColor="@color/black"
+        android:fontFamily="@font/ruler"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:autoSizeMaxTextSize="32sp"
+        android:autoSizeMinTextSize="26sp"
+        android:autoSizeTextType="uniform"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/text_rt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tanggal_rt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
