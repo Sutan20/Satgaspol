@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.waynestudio.satgaspol.home.HomeFragment
+import com.waynestudio.satgaspol.more.MoreFragment
+import com.waynestudio.satgaspol.paket.PackageFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,12 +18,16 @@ class MainActivity : AppCompatActivity() {
     private var navigationItemSelected: BottomNavigationView.OnNavigationItemSelectedListener =
         BottomNavigationView.OnNavigationItemSelectedListener {
             var fragment: Fragment? = null
-            if (it.itemId == R.id.action_home) {
-                fragment = HomeFragment.newInstance()
-            } else if (it.itemId == R.id.action_paket) {
-                fragment = PackageFragment.newInstance()
-            } else if(it.itemId == R.id.action_more){
-                fragment = MoreFragment.newInstance()
+            when (it.itemId) {
+                R.id.action_home -> {
+                    fragment = HomeFragment.newInstance()
+                }
+                R.id.action_paket -> {
+                    fragment = PackageFragment.newInstance()
+                }
+                R.id.action_more -> {
+                    fragment = MoreFragment.newInstance()
+                }
             }
 
             if (fragment != null) {
