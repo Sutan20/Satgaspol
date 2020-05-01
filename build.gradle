@@ -55,4 +55,5 @@ ext {
     retrofitVersion = '2.6.1'
     retrofitKotlinVersion = '0.9.2'
     circleImageViewVersion = '3.1.0'
+    coroutineVersion = '2.2.0'
 }

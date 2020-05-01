@@ -6,13 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSnapHelper
 import com.waynestudio.satgaspol.R
-import com.waynestudio.satgaspol.helper.generateMenu
-import com.waynestudio.satgaspol.helper.generateRT
-import com.waynestudio.satgaspol.home.helper.HomeRekapAdapter
+import com.waynestudio.satgaspol.utils.function.generateMenu
 import com.waynestudio.satgaspol.more.helper.MoreAdapter
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.app_bar_snippet.*
 import kotlinx.android.synthetic.main.fragment_more.*
 
 /**
@@ -38,13 +35,14 @@ class MoreFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        progress_bar.visibility = View.VISIBLE
+        action_bar_title.text = view.resources.getString(R.string.lainnya)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         if (activity != null) {
 //            viewModel = obtainViewModel(activity!!)
-            adapter = MoreAdapter(generateMenu())
+            adapter = MoreAdapter(generateMenu(), activity!!)
 
 //            viewModel.movies.observe(this, Observer { movie ->
 //                progress_bar.visibility = View.GONE

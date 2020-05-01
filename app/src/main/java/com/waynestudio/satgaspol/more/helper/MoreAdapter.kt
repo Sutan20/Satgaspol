@@ -1,5 +1,7 @@
 package com.waynestudio.satgaspol.more.helper
 
+import android.app.Activity
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,7 +11,7 @@ import com.waynestudio.satgaspol.more.model.MenuItem
 import kotlinx.android.synthetic.main.menu_item_content.view.*
 import kotlinx.android.synthetic.main.menu_item_header.view.*
 
-class MoreAdapter(private val data: List<Any>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class MoreAdapter(private val data: List<Any>, private var activity : Activity) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
         private const val ITEM_HEADER = 0
@@ -61,6 +63,10 @@ class MoreAdapter(private val data: List<Any>) : RecyclerView.Adapter<RecyclerVi
     inner class MoreContentViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bindView(m : MenuItem, next : Boolean = true){
             itemView.contentMenu.text = m.name
+
+            itemView.main_content_layout.setOnClickListener {
+                activity.startActivity(Intent(activity, m.destination as Class<*>))
+            }
 
             if(next){
                 itemView.content_layout.setBackgroundResource(android.R.color.transparent)

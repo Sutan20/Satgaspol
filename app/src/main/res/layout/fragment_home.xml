@@ -99,8 +99,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/status_time"
                     app:layout_constraintVertical_bias="0.0"
                     app:layout_constraintHorizontal_bias="0.0"
                     android:text="@string/ramadhan_service_hours"
@@ -114,15 +114,30 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/operational_title"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/status_time"
                     app:layout_constraintVertical_bias="0.0"
                     app:layout_constraintHorizontal_bias="0.0"
                     android:text="@string/operational_time"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="@android:color/black"
+                    android:fontFamily="@font/ruler" />
+
+                <TextView
+                    android:id="@+id/status_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:layout_marginEnd="15dp"
+                    android:text="@string/closed"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/holo_red_light"
                     android:fontFamily="@font/ruler" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>

@@ -27,4 +27,16 @@
     <string name="menu_title">Menu Title</string>
     <string name="placeholder_menu_content">Bahasa</string>
     <string name="content_menu_desc">Icon Content Menu</string>
+    <string name="open">OPEN</string>
+    <string name="closed">CLOSED</string>
+    <string name="action_bar_title">Action Bar Title</string>
+    <string name="nama">Nama</string>
+    <string name="masukkan_nama_anda">Masukkan Nama Anda</string>
+    <string name="placeholder_email_hint">Ex. john@example.com</string>
+    <string name="e_mail">E-mail</string>
+    <string name="no_telp">No. Telp</string>
+    <string name="blok_rumah">Blok Rumah</string>
+    <string name="placeholder_blok">Ex. D17/5</string>
+    <string name="note_alamat">Jika anda memiliki lebih dari 1 (satu) blok rumah, pisahkan dengan tanda ; (titik koma)</string>
+    <string name="simpan">Simpan</string>
 </resources>
